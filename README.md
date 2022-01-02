@@ -1,2 +1,13 @@
-# convert
-A free online file converter
+<h1 align="center">Convert</h1>
+
+<p align="center">
+<img src="https://img.shields.io/tokei/lines/github/JonZavialov/convert?color=lightgray" alt="Total Lines" />
+<img src="https://img.shields.io/github/repo-size/JonZavialov/convert?color=lightgray&logo=GitHub" alt="GitHub Repo Size" />
+<img src="https://img.shields.io/github/commit-activity/m/JonZavialov/convert?color=lightgray&logo=GitHub" alt="Commit Activity" />
+</p>
+
+<p align="center">A free, open source, bloatless solution to converting files online.</p>
+
+## 👨‍💻 Developlment
+
+This project is a currently in progress by Jonathan. Name is TBD
