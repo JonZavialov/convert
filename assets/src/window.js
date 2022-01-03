@@ -24,6 +24,15 @@ class Window{
         this.window.getElementsByClassName('window-body')[0].appendChild(footer)
     }
 
+    center(){
+        let width = this.window.clientWidth
+        let height = this.window.clientHeight
+
+        this.window.style.top = "50%"
+        this.window.style.left = "50%"
+        this.window.style.margin = `-${height/2}px 0 0 -${width/2}px`
+    }
+
     #createTitleBar(){
         let titleBar = document.createElement('div')
         titleBar.className = 'title-bar'
