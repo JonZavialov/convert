@@ -1,5 +1,6 @@
 body{
     background-color: #008080;
+    overflow: hidden;
 }
 
 .fileInput{
@@ -31,4 +32,40 @@ body{
 
 .lowerHeader{
     font-size: 50px;
+}
+
+.description{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: #c0c0c0;
+    margin-top: 215px;
+}
+
+#taskbar{
+    width: calc(100% - 5px);
+    bottom: 0;
+    position: absolute;
+    height: 35px;
+    transform: translate(-8px);
+    display: flex;
+}
+
+#taskbar button{
+    display: flex;
+    padding: 0;
+}
+
+#taskbar button img{
+    width: 32px;
+    margin-left: 4px;
+}
+
+#taskbar button p{
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.copyright{
+    margin: auto;
 }
