@@ -25,6 +25,9 @@ class Window{
     }
 
     center(){
+        //must be called after render
+        //TODO: add check for functions which are strictly called before/after render
+        
         let width = this.window.clientWidth
         let height = this.window.clientHeight
 
