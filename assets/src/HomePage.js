@@ -12,4 +12,8 @@ async function setCopyright(){
     let statement = `Copyright © 2021 - ${d.getFullYear()} Jonathan Zavialov All Rights Reserved.`
     let container = document.getElementsByClassName('copyright')[0]
     container.innerHTML = statement
+    
+    //make the copyright statement centered relative to the page
+    let buttonWidth = document.getElementById("startButton").clientWidth
+    container.style.transform = `translateX(-${buttonWidth/2}px)`
 }
