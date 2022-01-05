@@ -73,3 +73,10 @@ body{
 .copyright{
     margin: auto;
 }
+
+.repoLink{
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 3px;
+}
