@@ -1,5 +1,8 @@
 async function initHomePage(){
-    let fileInputWindow = new Window("input files here", "fileInput", "File Input")
+    let content = `
+        <input type="file" id="fileSelector">
+    `
+    let fileInputWindow = new Window(content, "fileInput", "File Input")
     fileInputWindow.generate()
     fileInputWindow.render()
     fileInputWindow.center()

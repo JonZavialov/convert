@@ -37,7 +37,7 @@ class Window{
     }
 
     #createTitleBar(){
-        let titleBar = document.createElement('div')
+        let titleBar = document.createElement('div') 
         titleBar.className = 'title-bar'
 
         //create title bar text
