@@ -33,7 +33,7 @@ class Window{
 
         this.window.style.top = "50%"
         this.window.style.left = "50%"
-        this.window.style.margin = `-${height/2}px 0 0 -${width/2}px`
+        this.window.style.margin = `${((height/2) * -1) - 45}px 0 0 -${width/2}px`
     }
 
     #createTitleBar(){

@@ -1,5 +1,5 @@
 async function initHomePage(){
-    let fileInputWindow = new Window("input file here", "fileInput", "File Input")
+    let fileInputWindow = new Window("input files here", "fileInput", "File Input")
     fileInputWindow.generate()
     fileInputWindow.render()
     fileInputWindow.center()
@@ -28,5 +28,5 @@ async function centerDesc(){
 
     element.style.top = "50%"
     element.style.left = "50%"
-    element.style.margin = `${(((height/2) * -1) + (inputWindow.clientHeight / 2)) + 43}px 0 0 -${width/2}px`
+    element.style.margin = `${(((height/2) * -1) + (inputWindow.clientHeight / 2)) - 2}px 0 0 -${width/2}px`
 }
