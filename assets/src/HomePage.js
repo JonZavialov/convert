@@ -5,6 +5,7 @@ async function initHomePage(){
     fileInputWindow.center()
 
     setCopyright()
+    centerDesc()
 }
 
 async function setCopyright(){
@@ -16,4 +17,16 @@ async function setCopyright(){
     //make the copyright statement centered relative to the page
     let buttonWidth = document.getElementById("startButton").clientWidth
     container.style.transform = `translateX(-${buttonWidth/2}px)`
+}
+
+async function centerDesc(){
+    let element = document.getElementsByClassName("description")[0]
+    let inputWindow = document.getElementsByClassName("fileInput")[0]
+    
+    let width = element.clientWidth
+    let height = element.clientHeight
+
+    element.style.top = "50%"
+    element.style.left = "50%"
+    element.style.margin = `${(((height/2) * -1) + (inputWindow.clientHeight / 2)) + 43}px 0 0 -${width/2}px`
 }

@@ -36,10 +36,9 @@ body{
 
 .description{
     width: fit-content;
-    margin: auto;
+    position: absolute;
     text-align: center;
     color: #c0c0c0;
-    margin-top: 215px;
 }
 
 #taskbar{
