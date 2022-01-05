@@ -10,6 +10,8 @@ class Window{
         this.window.className = this.className + ' window'
         this.#createTitleBar()
         this.#createBody()
+
+        return this.window
     }
 
     render(){
@@ -34,6 +36,11 @@ class Window{
         this.window.style.top = "50%"
         this.window.style.left = "50%"
         this.window.style.margin = `${((height/2) * -1) - 45}px 0 0 -${width/2}px`
+    }
+
+    getElement(){
+        //not necessary as the element is already returned when generating, but usefull in some occasions
+        return this.window
     }
 
     #createTitleBar(){

@@ -68,3 +68,8 @@ body{
 .copyright{
     margin: auto;
 }
+
+#converterCanvas{
+    position: absolute;
+    display: none;
+}

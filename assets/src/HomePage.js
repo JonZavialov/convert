@@ -1,14 +1,19 @@
 async function initHomePage(){
+    //generate, render, and center file input window
     let content = `
-        <input type="file" id="fileSelector">
+        <input type="file" class="fileSelector">
     `
     let fileInputWindow = new Window(content, "fileInput", "File Input")
-    fileInputWindow.generate()
+    let windowElement = fileInputWindow.generate()
     fileInputWindow.render()
     fileInputWindow.center()
 
+    //set copyright statement and description
     setCopyright()
     centerDesc()
+
+    //add event listener to file input
+    windowElement.getElementsByClassName('fileSelector')[0].addEventListener('change', fileInputEventListener)
 }
 
 async function setCopyright(){
