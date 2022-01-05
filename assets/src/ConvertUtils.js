@@ -21,10 +21,6 @@ async function processImage(file, extension, fileName){
     img.onload = function() {
         canvas.width = img.width
         canvas.height = img.height
-        let proportion = 400 / img.width
-        img.width = proportion * img.width
-        img.height = proportion * img.height
-        //document.body.appendChild(img)
         drawingContext.drawImage(img, 0, 0)
         canvas.toBlob(function(blob){
             switch(extension){
@@ -36,7 +32,19 @@ async function processImage(file, extension, fileName){
                     break
             }
         }, extension, fileName)
+
+        appendImageToWindow(img)
     }
+}
+
+async function appendImageToWindow(img){
+    let proportion = 400 / img.width
+    img.width = proportion * img.width
+    img.height = proportion * img.height
+    
+    let window = document.getElementsByClassName('fileInputWindow')[0]
+    window.getElementsByClassName('window-body')[0].appendChild(img)
+    fileInputWindow.center()
 }
 
 async function convertFromPNG(blob, fileName){

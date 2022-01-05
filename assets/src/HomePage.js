@@ -3,7 +3,7 @@ async function initHomePage(){
     let content = `
         <input type="file" class="fileSelector">
     `
-    let fileInputWindow = new Window(content, "fileInput", "File Input")
+    fileInputWindow = new Window(content, "fileInputWindow", "File Input")
     let windowElement = fileInputWindow.generate()
     fileInputWindow.render()
     fileInputWindow.center()
@@ -29,7 +29,7 @@ async function setCopyright(){
 
 async function centerDesc(){
     let element = document.getElementsByClassName("description")[0]
-    let inputWindow = document.getElementsByClassName("fileInput")[0]
+    let inputWindow = document.getElementsByClassName("fileInputWindow")[0]
     
     let width = element.clientWidth
     let height = element.clientHeight

@@ -3,8 +3,13 @@ body{
     overflow: hidden;
 }
 
-.fileInput{
+.fileInputWindow{
     position: absolute;
+}
+
+.fileInputWindow .window-body{
+    display: flex;
+    flex-direction: column;
 }
 
 .homePageHeader{
@@ -67,8 +72,4 @@ body{
 
 .copyright{
     margin: auto;
-}
-
-#converterCanvas{
-    position: absolute;
 }
