@@ -49,13 +49,13 @@ async function appendImageToWindow(img){
 
 async function convertFromPNG(blob, fileName){
     console.log(`converting ${fileName}.png to jpg`)
-    let file = new File([blob], `converted-${fileName}.jpg`, {type: "image/jpeg"})
+    let file = new File([blob], `sony-converted-${fileName}.jpg`, {type: "image/jpeg"})
     downloadFile(file)
 }
 
 async function convertFromJPG(blob, fileName){
     console.log(`converting ${fileName}.jpg to png`)
-    let file = new File([blob], `converted-${fileName}.png`, {type: "image/png"})
+    let file = new File([blob], `sony-converted-${fileName}.png`, {type: "image/png"})
     downloadFile(file)
 }
 
