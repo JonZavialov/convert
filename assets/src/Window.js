@@ -1,3 +1,5 @@
+//Jonathan Zavialov :)
+
 class Window{
     constructor(contents, className, title){
         this.contents = contents
