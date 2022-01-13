@@ -1,3 +1,5 @@
+// Jonathan Zavialov :)
+
 async function fileInputEventListener(e){
     let file = e.target.files[0]
     processFile(file)
