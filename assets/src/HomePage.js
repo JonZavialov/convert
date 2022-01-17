@@ -1,3 +1,5 @@
+//Jonathan Zavialov :)
+
 async function initHomePage(){
     //generate, render, and center file input window
     let content = `
