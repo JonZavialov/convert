@@ -10,4 +10,4 @@
 
 ## 👨‍💻 Developlment
 
-This project is a currently in progress by Jonathan. Name is TBD
+This project is currently in progress by Jonathan. Name is TBD
